@@ -1,0 +1,109 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body, h1 {
+ margin: 0px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav .title {
+  color: white;
+  text-align: center;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  height: 100%;
+  margin-left: 200px;
+  background-image: url("back.png");
+  background-repeat: repeat-y;
+  overflow: auto;
+}
+
+.bio-info {
+  height: 600px;
+}
+
+.block {
+  position: relative;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+  margin: 50px;
+  opacity: 0.75;
+}
+
+.block:before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  bottom: -18px;
+  right: -18px;
+  border-radius: 25px;
+  z-index: -1;
+  border-style: solid;
+  border-color: rgba(255,255,255, 0.75);
+  border-width: 8px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="sidenav">
+    <div class="title">
+      <h2>Xristos Efrosynis</h2>
+      <h3>UTH Student (ECE)</h3>
+    </div>
+    <div class="navitems">
+      <a href="index.html" style="color: #818181;";>About</a>
+      <a href="about.html" style="color: white;">Contact</a>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="row bio-info">
+      <div class="column" style="opacity: 0;">
+        <p></p>
+      </div>
+      <div class="column">
+        <div class="block">
+          <h2>About</h2>
+          <p>Email: ceffrosynis@uth.gr</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+   
+</body>
+</html> 
