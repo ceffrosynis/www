@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150357809-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150357809-1');
+</script>
+
+<title>Xristos Efrosynis</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<style>
+
+body, h1 {
+  margin: 0px;
+}
+
+body {
+  background-image: url("back.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+p {
+  font-size: 20px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav .title {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+.sidenav a {
+  margin: 0px;
+  text-align: center;
+  padding: 6px 6px 6px 0px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+}
+
+.about {
+  color: white;
+}
+
+.contact {
+  color: #818181;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  padding: 0px;
+  width:85%;
+  height: 100%;
+  float: right;
+}
+
+.bio-info {
+  height: 600px;
+  margin: 0px;
+}
+
+.block {
+  position: relative;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+  margin: 50px;
+  opacity: 0.75;
+}
+
+.block:before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  bottom: -18px;
+  right: -18px;
+  border-radius: 25px;
+  z-index: -1;
+  border-style: solid;
+  border-color: rgba(255,255,255, 0.75);
+  border-width: 8px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+li {
+  font-size: 20px;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.inner-row {
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+
+@media screen and (max-width: 970px) {
+  .sidenav {
+    display: block;
+  }
+
+  .sidenav .title  {
+    font-size: 13px;
+  }
+
+  .sidenav a {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sidenav {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .sidenav a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .navitems a {
+    text-align: center;
+    float: none;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="sidenav" id="sidenav">
+    <div class="title">
+      <h2>Xristos Efrosynis</h2>
+      <h3>UTH Student (ECE)</h3>
+    </div>
+    <div class="navitems">
+      <a class="about" href="index.html">About</a>
+      <a class="contact" href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="row bio-info">
+      <div class="column" style="opacity: 0;">
+        <p></p>
+      </div>
+      <div class="column">
+        <div class="block">
+          <h2>Xristos Efrosynis</h2>
+          <p>I am an undergraduate student in department of Electrical and Computer Engineering at University of Thessaly.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row education-info">
+      <div class="column">
+        <div class="block">
+          <div class="inner-row">
+            <h1>Education</h1>
+          </div>
+
+          <div class="inner-row">
+            <h2>Languages</h2>
+            <ul>
+              <li>Greek</li>
+              <li>English</li>
+              <li>French</li>
+            </ul> 
+          </div>
+
+          <div class="inner-row">
+            <h2>University</h2>
+            <ul>
+              <li>UTH ECE</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="column" style="opacity: 0;">
+      <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+   
+</body>
+</html> 
